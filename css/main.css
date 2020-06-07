@@ -107,23 +107,36 @@ body {
   /*font-size: 1.25em;*/
   font-size: 1.1em;
   height: 100%;
+  color: #fff;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
+.flex-container {
+    display: flex;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+#about p {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+#three-column-section {
   font-weight: 700;
-  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.div-1, .div-2, .div-3 {
+#born {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
 
-  color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
   background-color: #222;
@@ -131,10 +144,25 @@ body {
   padding-top: 1.5em;
 }
 
+#passion, #strength {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
 
-.div-2, .div-3 {
-    border-left: 0.1em solid #343434;
-    padding-left: 1.2em;
+  line-height: 1.5em;
+  font-size: 1.6em;
+  background-color: #222;
+  height: 300px;
+  padding-top: 1.5em;
+
+  border-left: 0.1em solid #343434;
+  padding-left: 1.2em;
+}
+
+footer {
+    margin-top: 3em;
 }
 
 
